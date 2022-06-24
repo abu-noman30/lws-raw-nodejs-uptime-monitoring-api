@@ -1,0 +1,37 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": ["react-app"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+
+  "plugins": ["prettier", "react-hooks"],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "printWidth": 80,
+        "trailingComma": "none",
+        "jsxSingleQuote": true,
+        "singleQuote": true,
+        "useTabs": true,
+        "bracketSpacing": true,
+        "jsxBracketSameLine": false,
+        "arrowParens": "always",
+        "requirePragma": false,
+        "endOfLine": "lf",
+        "varsIgnorePattern": "[iI]gnored",
+        "no-unused-vars": "off",
+        "no-unused-expressions": "off",
+        "react-hooks/exhaustive-deps": false
+      }
+    ]
+  }
+}
